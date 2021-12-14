@@ -32,3 +32,5 @@ textTitle.innerHTML = titleArr[0];
 
 let textP = document.getElementById("text");
 textP.innerHTML = textArr[0];
+
+
