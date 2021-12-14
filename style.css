@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 #container {
   margin: 150px auto;
   width: 1000px;
@@ -12,12 +16,24 @@
 
 #vetrina {
   width: 850px;
+  position: relative;
 }
 
 #lista-immagini {
+  position: relative;
   width: 150px;
   display: flex;
   flex-direction: column;
+  background-color: #000;
+}
+
+#lista-immagini img {
+  opacity: 0.5;
+}
+
+#lista-immagini .active {
+  opacity: 1;
+  border: 2px solid #dac9ff;
 }
 
 img {
@@ -25,6 +41,34 @@ img {
   width: 100%;
 }
 
-#lista-immagini img {
-  height: calc(100% / 5);
+.testo {
+  position: absolute;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  color: #FFF;
+  text-align: right;
+  bottom: 0;
+  margin: 20px 10px;
+}
+
+.arrow {
+  position: absolute;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.7;
+  color: #000;
+  font-weight: bold;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.up {
+  top: 0;
+}
+
+.down {
+  bottom: 0;
 }
