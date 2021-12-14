@@ -24,17 +24,18 @@ const textArr = [
 ]
 
 // Definiamo variabili
-let imgVetrina = document.getElementById("img-vetrina");
-imgVetrina.src = imgArr[0];
+let mainImage = document.getElementById("slideshow");
+let minImage = document.getElementById("thumbnails");
 
-let textTitle = document.getElementById("title");
-textTitle.innerHTML = titleArr[0];
+// For per l'immagine in vetrina
+// Da completare
 
-let textP = document.getElementById("text");
-textP.innerHTML = textArr[0];
+// For per le miniature
+for (let i = 0; i < imgArr.length; i++) {
+  minImage.innerHTML += `<img src="${imgArr[i]}" alt="">`;
+}
 
-let arrowUp = document.getElementById("arrow-up");
-// arrowUp.addEventListener("click", function);
-
-let arrowDown = document.getElementById("arrow-down");
-// arrowUp.addEventListener("click", function);
+// Aggiugnere classe .active alla miniatura selezionata
+// Da completare
+let minActive
+minActive.classList.add("active");
