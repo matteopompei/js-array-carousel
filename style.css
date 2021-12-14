@@ -8,6 +8,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+}
+
 #container {
   margin: 150px auto;
   width: 1000px;
@@ -17,6 +22,16 @@ a {
 #slideshow {
   width: 850px;
   position: relative;
+}
+
+#text {
+  position: absolute;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  color: #FFF;
+  text-align: right;
+  bottom: 0;
+  margin: 20px 10px;
 }
 
 #thumbnails {
@@ -34,21 +49,6 @@ a {
 #thumbnails .active {
   opacity: 1;
   border: 2px solid #dac9ff;
-}
-
-img {
-  height: 100%;
-  width: 100%;
-}
-
-#text {
-  position: absolute;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.1rem;
-  color: #FFF;
-  text-align: right;
-  bottom: 0;
-  margin: 20px 10px;
 }
 
 .arrow {

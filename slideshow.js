@@ -27,8 +27,14 @@ const textArr = [
 let mainImage = document.getElementById("slideshow");
 let minImage = document.getElementById("thumbnails");
 
-// For per l'immagine in vetrina
-// Da completare
+// Immagine in vetrina
+mainImage.innerHTML += `
+<div id="text">
+  <h2>${titleArr[0]}</h2>
+  <p>${textArr[0]}</p>
+</div>
+<img src="${imgArr[0]}" alt="">
+`
 
 // For per le miniature
 for (let i = 0; i < imgArr.length; i++) {
@@ -39,3 +45,4 @@ for (let i = 0; i < imgArr.length; i++) {
 // Da completare
 let minActive
 minActive.classList.add("active");
+
