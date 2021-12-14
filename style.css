@@ -9,7 +9,6 @@ a {
 }
 
 img {
-  height: 100%;
   width: 100%;
 }
 
@@ -21,16 +20,25 @@ img {
 
 #slideshow {
   width: 850px;
+}
+
+.content {
+  width: 100%;
   position: relative;
 }
 
-#text {
+.hidden {
+  display: none;
+}
+
+.text {
   position: absolute;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.1rem;
   color: #FFF;
   text-align: right;
   bottom: 0;
+  right: 0;
   margin: 20px 10px;
 }
 

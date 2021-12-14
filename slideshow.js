@@ -28,21 +28,34 @@ let mainImage = document.getElementById("slideshow");
 let minImage = document.getElementById("thumbnails");
 
 // Immagine in vetrina
-mainImage.innerHTML += `
-<div id="text">
-  <h2>${titleArr[0]}</h2>
-  <p>${textArr[0]}</p>
-</div>
-<img src="${imgArr[0]}" alt="">
-`
+for (let i = 0; i < imgArr.length; i++) {
+  mainImage.innerHTML += `
+  <div class="content hidden">
+    <div class="text">
+      <h2>${titleArr[i]}</h2>
+      <p>${textArr[i]}</p>
+    </div>
+    <img src="${imgArr[i]}" alt="">
+  </div>
+  `
+}
 
 // For per le miniature
 for (let i = 0; i < imgArr.length; i++) {
   minImage.innerHTML += `<img src="${imgArr[i]}" alt="">`;
 }
 
-// Aggiugnere classe .active alla miniatura selezionata
-// Da completare
-let minActive
-minActive.classList.add("active");
+// Frecce
+let prev = document.getElementById("arrow-up");
+let next = document.getElementById("arrow-down");
 
+prev.addEventListener("click", prevFunc);
+next.addEventListener("click", nextFunc);
+
+function prevFunc() {
+
+}
+
+function nextFunc() {
+
+}
