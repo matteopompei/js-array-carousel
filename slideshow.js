@@ -33,4 +33,8 @@ textTitle.innerHTML = titleArr[0];
 let textP = document.getElementById("text");
 textP.innerHTML = textArr[0];
 
+let arrowUp = document.getElementById("arrow-up");
+// arrowUp.addEventListener("click", function);
 
+let arrowDown = document.getElementById("arrow-down");
+// arrowUp.addEventListener("click", function);
