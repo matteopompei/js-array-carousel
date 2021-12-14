@@ -41,7 +41,7 @@ img {
   width: 100%;
 }
 
-.testo {
+.testi {
   position: absolute;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.1rem;
@@ -68,10 +68,10 @@ img {
   opacity: 1;
 }
 
-.up {
+#arrow-up {
   top: 0;
 }
 
-.down {
+#arrow-down {
   bottom: 0;
 }
