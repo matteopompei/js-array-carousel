@@ -28,7 +28,7 @@ let mainImage = document.getElementById("slideshow");
 let minImage = document.getElementById("thumbnails");
 let active = 0; // Puntatore
 
-// Immagine in vetrina
+// For per aggiungere le immagini
 for (let i = 0; i < imgArr.length; i++) {
   mainImage.innerHTML += `
   <div class="content hidden" id="item-${i}">
@@ -39,10 +39,6 @@ for (let i = 0; i < imgArr.length; i++) {
     <img src="${imgArr[i]}" alt="">
   </div>
   `
-}
-
-// For per le miniature
-for (let i = 0; i < imgArr.length; i++) {
   minImage.innerHTML += `<img src="${imgArr[i]}" alt="" id="min-${i}">`;
 }
 
