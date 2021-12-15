@@ -50,8 +50,8 @@ for (let i = 0; i < imgArr.length; i++) {
 let mainImageActive = document.getElementById("item-" + active);
 let minImageActive = document.getElementById("min-" + active);
 
-mainImageActive.classList.remove("hidden");
-minImageActive.classList.add("active");
+mainImageActive.classList.add("active");
+minImageActive.classList.add("thumbnail-active");
 
 // Frecce
 let prev = document.getElementById("arrow-up");
@@ -62,8 +62,21 @@ next.addEventListener("click", nextFunc);
 
 function prevFunc() {
   active--;
+  mainImageActive.classList.remove("active");
+  minImageActive.classList.remove("thumbnail-active");
+  mainImageActive = document.getElementById("item-" + active);
+  minImageActive = document.getElementById("min-" + active);
+  mainImageActive.classList.add("active");
+  minImageActive.classList.add("thumbnail-active");
 }
 
 function nextFunc() {
   active++;
+  mainImageActive.classList.remove("active");
+  minImageActive.classList.remove("thumbnail-active");
+  mainImageActive = document.getElementById("item-" + active);
+  minImageActive = document.getElementById("min-" + active);
+  mainImageActive.classList.add("active");
+  minImageActive.classList.add("thumbnail-active");
 }
+

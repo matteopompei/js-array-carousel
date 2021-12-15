@@ -30,10 +30,11 @@ img {
   height: 100%;
   width: 100%;
   position: relative;
+  display: none;
 }
 
-.hidden {
-  display: none;
+.active {
+  display: block;
 }
 
 .text {
@@ -60,7 +61,7 @@ img {
   opacity: 0.5;
 }
 
-.active {
+.thumbnail-active {
   opacity: 1 !important;
   border: 2px solid #dac9ff;
 }
