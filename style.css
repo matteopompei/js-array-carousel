@@ -22,7 +22,12 @@ img {
   width: 850px;
 }
 
+#slideshow img {
+  height: 100%;
+}
+
 .content {
+  height: 100%;
   width: 100%;
   position: relative;
 }
@@ -51,11 +56,12 @@ img {
 }
 
 #thumbnails img {
+  height: calc(100% / 5);
   opacity: 0.5;
 }
 
-#thumbnails .active {
-  opacity: 1;
+.active {
+  opacity: 1 !important;
   border: 2px solid #dac9ff;
 }
 

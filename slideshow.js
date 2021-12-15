@@ -43,14 +43,15 @@ for (let i = 0; i < imgArr.length; i++) {
 
 // For per le miniature
 for (let i = 0; i < imgArr.length; i++) {
-  minImage.innerHTML += `<img src="${imgArr[i]}" alt="" id="item-${i}">`;
+  minImage.innerHTML += `<img src="${imgArr[i]}" alt="" id="min-${i}">`;
 }
 
 // Immagini attive
 let mainImageActive = document.getElementById("item-" + active);
-let minImageActive = document.getElementById("item-" + active);
+let minImageActive = document.getElementById("min-" + active);
 
 mainImageActive.classList.remove("hidden");
+minImageActive.classList.add("active");
 
 // Frecce
 let prev = document.getElementById("arrow-up");
