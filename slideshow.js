@@ -62,6 +62,9 @@ next.addEventListener("click", nextFunc);
 
 function prevFunc() {
   active--;
+  if (active < 0) {
+    active = 4;
+  }
   mainImageActive.classList.remove("active");
   minImageActive.classList.remove("thumbnail-active");
   mainImageActive = document.getElementById("item-" + active);
@@ -72,6 +75,9 @@ function prevFunc() {
 
 function nextFunc() {
   active++;
+  if (active > 4) {
+    active = 0;
+  }
   mainImageActive.classList.remove("active");
   minImageActive.classList.remove("thumbnail-active");
   mainImageActive = document.getElementById("item-" + active);
@@ -79,4 +85,3 @@ function nextFunc() {
   mainImageActive.classList.add("active");
   minImageActive.classList.add("thumbnail-active");
 }
-
